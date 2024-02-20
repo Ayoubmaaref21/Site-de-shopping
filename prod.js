@@ -55,9 +55,11 @@ async function main() {
 
   mainprod.appendChild(prod);
 }
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get("id");
 async function getdata() {
-  const products = fetch("https://fakestoreapi.com/products/1").then((res) =>
-    res.json()
+  const products = fetch("https://fakestoreapi.com/products/" + id).then(
+    (res) => res.json()
   );
   return products;
 }

@@ -58,6 +58,13 @@ async function main() {
     prixetoile.appendChild(img2);
 
     mainprod.appendChild(prod);
+
+    prod.addEventListener("click", func);
+    function func() {
+      window.open("prod.html?id=" + product.id, "blank", "id=");
+      console.log(product.id);
+      return product.id;
+    }
   });
 }
 
@@ -67,7 +74,5 @@ async function getdata() {
   );
   return products;
 }
-document.getElementById(i).addEventListener("click", function () {
-  window.location.href = "/prod.html"; // replace with the URL of the page you want to redirect to
-});
+
 main();
