@@ -25,6 +25,12 @@ header {
   margin-right: auto;
   height: 7rem;
 }
+.navbar:hover {
+  transform: scale(1.2);
+  color: #001d4e;
+  text-decoration: underline;
+  cursor: pointer;
+}
 .div2 {
   display: flex;
   gap: 1rem;
@@ -34,6 +40,10 @@ header {
   display: flex;
   flex-direction: row;
   gap: 3rem;
+  justify-content: center;
+}
+.prodp2 :nth-child(4) {
+  width: 26rem;
 }
 
 .prodp1 img {

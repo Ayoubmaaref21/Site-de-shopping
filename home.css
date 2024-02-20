@@ -50,6 +50,13 @@ header {
   width: 20%;
   transition: background-color 0.5s ease;
 }
+.navbar:hover{
+  transform: scale(1.2);
+  color:#001d4e;
+  text-decoration: underline;
+  cursor: pointer;
+
+}
 .prod:hover {
   transform: scale(1.2);
   background-color: #cfe4ec;

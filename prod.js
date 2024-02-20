@@ -35,6 +35,7 @@ async function main() {
   input1.setAttribute("type", "number");
   input1.setAttribute("min", 1);
   input1.setAttribute("max", 10);
+  input1.setAttribute("value", 0);
 
   img1.setAttribute(
     "src",
