@@ -1,7 +1,6 @@
 async function main() {
   const products = await getdata();
-  const mainprod = document.createElement("main");
-  mainprod.classList.add("mainprod");
+  const mainprod = document.getElementById("mainid");
 
   products.forEach((product, i) => {
     const prod = document.createElement("div");
@@ -60,15 +59,15 @@ async function main() {
 
     mainprod.appendChild(prod);
   });
-
-  document.body.appendChild(mainprod);
 }
 
-function getdata() {
+async function getdata() {
   const products = fetch("https://fakestoreapi.com/products?limit=16").then(
     (res) => res.json()
   );
   return products;
 }
+document.getElementById(i).addEventListener("click", function () {
+  window.location.href = "/prod.html"; // replace with the URL of the page you want to redirect to
+});
 main();
-const img = document.createElement("img");
